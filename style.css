@@ -1,0 +1,219 @@
+/* Base Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 50%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.parent h1 {
+    background-color: orange;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 360px;
+    margin-top: 20px;
+}
+
+.parent table td {
+    height: 70px;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.container input {
+    text-align: right;
+    width: 100%;
+    padding: 20px;
+    border: 3px solid orange;
+    border-radius: 360px;
+    font-size: 15px;
+}
+
+.container .body {
+    width: 100%;
+}
+
+.body table {
+    width: 100%;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+table td {
+    text-align: center;
+    padding: 10px;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 450px;
+    width: 50px;
+}
+
+/* Responsive Design */
+
+/* Small Mobile (up to 300px) */
+@media (max-width: 300px) {
+    .parent {
+        width: 100%;
+    }
+    .parent h1 {
+        width: 90%;
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 8px;
+    }
+    .container {
+        width: 90%;
+    }
+    .container input {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .body table {
+        font-size: 14px;
+    }
+    table td {
+        padding: 5px;
+        width: 30px;
+    }
+}
+
+/* Medium Mobile (up to 475px) */
+@media (max-width: 475px) {
+    .parent {
+        width: 90%;
+    }
+    .parent h1 {
+        width: 80%;
+        font-size: 16px;
+        margin-top: 15px;
+        padding: 10px;
+    }
+    .container {
+        width: 90%;
+    }
+    .container input {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .body table {
+        font-size: 16px;
+    }
+    table td {
+        padding: 6px;
+        width: 35px;
+    }
+}
+
+/* Large Mobile (475px and above) */
+@media (min-width: 476px) and (max-width: 768px) {
+    .parent {
+        width: 80%;
+    }
+    .parent h1 {
+        width: 70%;
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 12px;
+    }
+    .container {
+        width: 85%;
+    }
+    .container input {
+        font-size: 16px;
+        padding: 12px;
+    }
+    .body table {
+        font-size: 18px;
+    }
+    table td {
+        padding: 8px;
+        width: 40px;
+    }
+}
+
+/* Tablet (up to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .parent {
+        width: 75%;
+    }
+    .parent h1 {
+        width: 65%;
+        font-size: 20px;
+    }
+    .container {
+        width: 80%;
+    }
+    .container input {
+        font-size: 18px;
+        padding: 15px;
+    }
+    .body table {
+        font-size: 20px;
+    }
+    table td {
+        padding: 10px;
+        width: 45px;
+    }
+}
+
+/* Laptop (up to 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .parent {
+        width: 65%;
+    }
+    .parent h1 {
+        width: 60%;
+        font-size: 22px;
+    }
+    .container {
+        width: 75%;
+    }
+    .container input {
+        font-size: 20px;
+        padding: 18px;
+    }
+    .body table {
+        font-size: 22px;
+    }
+    table td {
+        padding: 12px;
+        width: 50px;
+    }
+}
+
+/* Desktop (1200px and above) */
+@media (min-width: 1201px) {
+    .parent {
+        width: 50%;
+    }
+    .parent h1 {
+        width: 50%;
+        font-size: 24px;
+    }
+    .container {
+        width: 60%;
+    }
+    .container input {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .body table {
+        font-size: 25px;
+    }
+    table td {
+        padding: 10px;
+        width: 50px;
+    }
+}

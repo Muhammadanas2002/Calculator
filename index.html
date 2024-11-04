@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parent">
+        
+            <h1>CALCULATOR</h1>
+        <div class="container">
+            <div><input type="text" disabled placeholder="0" id="input"></div>
+            <div class="body">
+                <table>
+                    <tr>
+                        <td onclick="inpValue(1)">1</td>
+                        <td class="same" onclick="inpValue(2)">2</td>
+                        <td onclick="inpValue(3)">3</td>
+                        <td onclick="inpValue('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td onclick="inpValue(4)">4</td>
+                        <td class="same" onclick="inpValue(5)">5</td>
+                        <td onclick="inpValue(6)">6</td>
+                        <td onclick="inpValue('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="inpValue(7)">7</td>
+                        <td class="same" onclick="inpValue(8)">8</td>
+                        <td onclick="inpValue(9)">9</td>
+                        <td onclick="inpValue('*')">*</td>
+                    </tr>
+                    <tr>
+                        <td onclick="inpValue(0)">0</td>
+                        <td class="same" onclick="inpValue('00')">00</td>
+                        <td onclick="inpValue('.')">.</td>
+                        <td onclick="inpValue('/')">/</td>
+                    </tr>
+                    <tr>
+                        <td onclick="cleared()">C</td>
+                        <td class="same" onclick="allCleared()">Ac</td>
+                        <td onclick="equalValue()" colspan="2">=</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
+
+
+
+
+<!-- 
+/* Base Styles */
+ -->
